@@ -112,3 +112,5 @@ Test your explorer instance in browser:
 ```
 http://127.0.0.1:3001/
 ```
+
+**NB!** By default this installation uses `powerblockcore-lib` instance from `coblee_litecore` branch, as it is default branch in repo. `master` branch of `powerblockcore-lib` still contains few Litecoin changes (scrypt as a hashing algo and others) and shouldn't be used with PowerBlockCoin for now without changes.
