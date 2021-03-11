@@ -51,11 +51,11 @@ nvm use v8
 ```
 mkdir live
 cd live 
-npm install git+https://git@github.com/DeckerSU/powerblockcore-node
+npm install git+https://git@github.com/pbcllc/powerblockcore-node
 # create PBC-explorer and powerblockcoin-node.json config for it
 $PWD/node_modules/.bin/powerblockcore-node create PBC-explorer
 cd PBC-explorer
-$PWD/node_modules/.bin/powerblockcore-node install git+https://git@github.com/DeckerSU/insight-powerblock-api git+https://git@github.com/DeckerSU/insight-powerblock-ui
+$PWD/node_modules/.bin/powerblockcore-node install git+https://git@github.com/pbcllc/insight-powerblock-api git+https://git@github.com/pbcllc/insight-powerblock-ui
 # to fix "more than one instance of bitcore-lib found" we should delete powerblockcore-lib dependency in submodules
 rm -rf node_modules/powerblockcore-message/node_modules/powerblockcore-lib
 rm -rf node_modules/insight-powerblock-api/node_modules/powerblockcore-lib
